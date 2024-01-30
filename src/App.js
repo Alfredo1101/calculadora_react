@@ -4,7 +4,7 @@ import './App.css';
 import Boton from './componentes/Boton';
 import BotonClear from './componentes/BotonClear';
 import Pantalla from './componentes/pantalla';
-import freecodecampLogo from './imagenes/freecodecamp-logo (1).png';
+import freecodecampLogo from './imagenes/favicon-32x32.png';
 
 function App() {
 
