@@ -1,40 +1,54 @@
-.App {
-  min-height: 100vh;
-  padding: 20px; /* Reduje el padding para que no ocupe tanto espacio en dispositivos pequeños */
+.App{
+  height: 100vh;
+  padding: 10px;
   background-color: #1b1b32;
   font-family: Lato, sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; /* Cambié align-items a flex-start para que los elementos se alineen en la parte superior */
-}
+  align-items: center;
 
-.freecodecamp-logo-contenedor {
+}
+.freecodecamp-logo-contenedor{
   width: 100%;
-  margin: 8px 0; /* Reduje el margen superior e inferior para dispositivos más pequeños */
+  height: 200px;
+  margin: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.freecodecamp-logo {
-  max-height: 80px; /* Limité la altura máxima del logo para dispositivos más pequeños */
+.freecodecamp-logo{
+  height: 150px;
+  background: #99c9ff;
+  border-radius: 50%;
 }
-
-.contenedor-calculadora {
-  width: 100%; /* Cambié el ancho a 100% para que la calculadora sea completamente responsiva */
-  max-width: 400px; /* Establecí un ancho máximo para evitar que la calculadora se vuelva demasiado grande en pantallas grandes */
+.contenedor-calculadora{
+  width: 400px;
+  height: 600px;
   padding: 14px;
   background-color: #99c9ff;
   border-radius: 20px;
   border: 5px solid white;
-  box-sizing: border-box; /* Añadí box-sizing para que el borde se incluya en el ancho total */
+  margin-bottom: 200px;
 }
-
-.fila {
+.fila{
   margin: 4px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%; /* Establecí un ancho del 100% para que las filas se ajusten al contenedor */
+  justify-content:center;
+}
+
+@media screen and (min-width: 600px) {
+  .contenedor-calculadora {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #99c9ff;
+    border-radius: 20px;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    font-size: 5px;
+  }
+  
 }
